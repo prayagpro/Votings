@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4a90e2;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #4a90e2;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e6e9f0;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #4a90e2;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.card button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #357ab8;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4a90e2;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
